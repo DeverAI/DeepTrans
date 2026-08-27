@@ -1,0 +1,23 @@
+# Secrets / local runtime state
+config.json
+*.corrupted
+Err.log
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Build outputs
+build/
+dist/
+*.spec.bak
+
+# Local-only project management workspace (internal docs / backups)
+backups/
+updates/
+
+# OS junk
+Thumbs.db
+.DS_Store

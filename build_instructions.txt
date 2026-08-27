@@ -1,0 +1,45 @@
+# DeepTrans Building Instructions
+
+## 1. Environment Setup (Miniforge/Conda)
+
+Open your terminal (Miniforge Prompt) and run the following commands to create a clean environment:
+
+```bash
+conda create -n deeptrans python=3.10 -y
+conda activate deeptrans
+```
+
+## 2. Install Dependencies
+
+Navigate to the project directory:
+
+```bash
+cd /d "C:\Users\Administrator\Documents\DeepTrans"
+pip install -r requirements.txt
+```
+
+## 3. Generate Assets
+
+Before running or building, generate the necessary icons:
+
+```bash
+python utils/icon_gen.py
+```
+
+## 4. Run the Application
+
+To test the application:
+
+```bash
+python main.py
+```
+
+## 5. Build/Package (Exe)
+
+To create a standalone executable:
+
+```bash
+python build.py
+```
+
+The script wraps PyInstaller (onefile + noconsole) and prints the output path; the executable will be in the `dist` folder.
